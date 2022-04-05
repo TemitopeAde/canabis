@@ -1,0 +1,23 @@
+@media only screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .flex-between {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        font-size: 19px;
+    }
+
+    .hero-one h3 {
+        font-size: 2.5rem;
+    }
+    
+}
+
+
