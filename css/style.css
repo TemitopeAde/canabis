@@ -118,7 +118,9 @@ ul li {
 
 
 /* SECTION ONE */
-
+p {
+    font-size: 1.25rem;
+}
 .sections {
     padding: 4rem 0;
 }
@@ -132,6 +134,12 @@ ul li {
 
 .section-one {
     padding-top: 6rem;
+}
+
+.section-one h3,
+.section-two h3 {
+    text-decoration: underline;
+    padding-bottom: 40px;
 }
 
 /* SWIPER.JS */

@@ -72,7 +72,7 @@
     <!-- HEADER STARTS -->
     <header class="header shadow">
         <nav class="navbar navbar-dark navbar-expand-lg fixed-top flex-between">
-            <div class="container-fluid">
+            <div class="container-fluid container">
                 
                 <a href="#" class="navbar-brand">
                     <img src="/images/logo.jpg" alt="logo" class="logo">
@@ -118,15 +118,16 @@
 
 
     <!-- HERO STARTS -->
-    <div class="hero container d-flex align-items-center justify-content-lg-between flex-sm-row">
+    <div class="hero container flex-between">
         <div class="hero-one">
             <h3>The best product and the best service ...</h3>
             <div>
+              <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Itaque obcaecati reiciendis vitae culpa, quo eveniet 
-                 corrupti sequi voluptatem numquam facilis asperiores 
-                 adipisci eum accusantium deleniti, veniam voluptates. 
-                 
+                Itaque obcaecati reiciendis vitae culpa, quo eveniet 
+                corrupti sequi voluptatem numquam facilis asperiores 
+                adipisci eum accusantium deleniti, veniam voluptates. 
+              </p>   
             </div>
         </div>
         <div class="hero-two">
@@ -209,6 +210,16 @@
       
     </div>
 
+
+    <div class="section-two sections container">
+      <div>
+        <h3>Heady Righton Club</h3>
+      </div>
+
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga fugiat quisquam veritatis, debitis quos quis eaque voluptas, eligendi dolor accusantium eum ipsum, hic ducimus sint suscipit natus ut atque rerum adipisci iure doloremque dolore fugit labore! Adipisci ipsum error explicabo nesciunt ea amet enim neque, eaque quasi expedita, quidem placeat, nostrum fugit recusandae? Officia est hic perspiciatis dicta ratione odit quis modi voluptas nam facere soluta pariatur quae illum aut itaque minima unde tempore illo, id quam corrupti sint. Iste deserunt quod laborum dolorem earum quibusdam nobis dicta quis obcaecati? Perspiciatis ipsam quaerat nobis, qui asperiores dolorum labore ex excepturi!</p>
+      </div>
+    </div>
     
     
   
@@ -239,6 +250,8 @@
     <script>
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 5,
+        loop: true,
+        lazy: true,
         spaceBetween: 30,
         pagination: {
           el: ".swiper-pagination",
