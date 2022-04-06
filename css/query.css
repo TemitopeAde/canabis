@@ -14,10 +14,21 @@
         font-size: 19px;
     }
 
-    .hero-one h3 {
+    .hero-one h3,
+    .sections h3 {
         font-size: 2.5rem;
     }
     
 }
+
+
+@media only screen and (max-width: 425px) {
+    .swiper-slide img {
+        width: 230px !important;
+        height: 230px !important;
+      }
+    
+}
+
 
 

@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/query.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -114,7 +118,6 @@
 
 
     <!-- HERO STARTS -->
-
     <div class="hero container d-flex align-items-center justify-content-lg-between flex-sm-row">
         <div class="hero-one">
             <h3>The best product and the best service ...</h3>
@@ -157,13 +160,58 @@
         </div>
         
     </div>
-
-
     <!-- HERO ENDS -->
 
-    
-    
+    <div class="sections section-one container">
+      <div>
+        <h3>The Heady Righton Originals</h3>
+      </div>
 
+      <div class="swiper-section">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/images/logo.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/logo.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/logo.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/logo.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/logo.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/logo.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/logo.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/logo.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/logo.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/logo.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      
+    </div>
+
+    
+    
+  
     
     <script src="/splide-3.6.12/package/dist/js/splide.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -172,19 +220,70 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-    var splide = new Splide( '.splide', {
+      var splide = new Splide( '.splide', {
         type    : 'loop',
         perPage : 3,
         autoplay: true,
         perMove: 1,
+        lazyLoad: 'nearby',
         gap        : '1rem',
         breakpoints: {
             1200: { perPage: 3, gap: '1rem' },
             768 : { perPage: 1 },
         },
-    } );
+      } );
 
-    splide.mount();    
+      splide.mount();   
+      
     </script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          240: {
+            slidesPerView: 1,
+          },
+          320: {
+            slidesPerView: 1,
+          },
+          375: {
+            slidesPerView: 1,
+          },
+          425: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+          1440: {
+            slidesPerView: 5,
+            spaceBetween: 60
+          },
+        }
+      });
+    </script>
+    
 </body>
 </html>
