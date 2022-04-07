@@ -25,6 +25,13 @@ body::-webkit-scrollbar {
     border-radius: 30px;
   }
 
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Raleway', sans-serif;
     color: #774738;
@@ -53,7 +60,7 @@ ul li {
 }
 
 .btn-success {
-    background-color: #774738 !important;
+    background-color: #c7542b !important;
     border-color: #774738;
     transition: .8s;
 }
@@ -62,10 +69,15 @@ ul li {
     border-color: #774738;
     transform: translate(3px,-3px);
     background-color: #ffffff !important;
-    color: #774738 !important;
+    color: #c7542b !important;
 }
 
 /* HEADER */
+.nav-items h5 {
+    text-align: center;
+    color: #2f2b3d;
+}
+
 .logo {
     height: 80px;
     width: 160px;
@@ -195,7 +207,33 @@ p {
 }
 
 
+/* OVERLAY */
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.6);
+    bottom: 0;
+    right: 0;
+    z-index: 100000;
+    color: white;
+    
+    /* user-select: none; */
+}
+
+.toggle {
+    display: none;
+}
+
+.overlay-container {
+    height: 100%;
+    width: 100%;
+    background-color: #2f2b3d;
+    margin:  auto;
+    flex-direction: column;
+    gap: 3rem;
+}
 
 
 

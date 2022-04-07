@@ -43,4 +43,13 @@
     }());
 
 
+
+var btnCont = document.getElementById('continue-btn');
+var over = document.querySelector('.overlay');
+var section = document.querySelector('.over-section');
+
+btnCont.addEventListener('click', function() {
+  over.classList.remove('overlay')
+  section.classList.add('toggle')
+}, {once: true})
     
