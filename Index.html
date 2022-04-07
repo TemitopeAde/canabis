@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/query.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -225,10 +226,24 @@
       <div class="overlay">
         <div class="flex-center overlay-container">
           <div>
-            <p>Click Continue if you are 18 years and above</p>
+            <p>Click continue to website</p>
+
+          </div>
+          <div class="">
+            <label class="label">
+              <input onclick="myFunction()" class="label__checkbox" type="checkbox" />
+              <div class="label__text">
+                <div class="label__check">
+                  <i class="fa fa-check icon"></i>
+                </div>
+                <div>
+                  I am 21+ years and above
+                </div>
+              </span>
+            </label>
           </div>
           <div class="buttons">
-            <button id="continue-btn" class="btn btn-success">Continue</button>
+            <button disabled id="continue-btn" class="btn btn-success">Continue</button>
           </div>
         </div>
         

@@ -48,8 +48,19 @@ var btnCont = document.getElementById('continue-btn');
 var over = document.querySelector('.overlay');
 var section = document.querySelector('.over-section');
 
+
 btnCont.addEventListener('click', function() {
   over.classList.remove('overlay')
   section.classList.add('toggle')
 }, {once: true})
-    
+
+
+function myFunction() {
+  var check = document.querySelector('.label__checkbox')
+
+  if (check.checked == true){
+      btnCont.disabled = false
+  } else {
+      btnCont.disabled = true
+  }
+  }
