@@ -127,6 +127,10 @@ ul li {
     font-size: 3rem;
 }
 
+.hero {
+  padding-bottom: 3rem;
+}
+
 
 
 /* SECTION ONE */
@@ -384,6 +388,10 @@ p {
     }
   }
   
+
+.divider {
+  border-top: 2px solid #2c0000;
+}
 
 
 
